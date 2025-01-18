@@ -1,6 +1,7 @@
 import express from 'express';
 import morgan from 'morgan'
 import cors from 'cors';
+import quizRouter from "./routes/QuizData.js";
 
 // Initializations
 const app = express();
@@ -14,8 +15,6 @@ app.use(cors());
 app.use(express.json());
 
 // Routes
-app.use('/Code_Mania', (req, res) => {
-    res.send('Welcome to Code Mania!');
-  });
+app.use('/Code_Mania', quizRouter)
 
 export default app;

@@ -1,0 +1,13 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 7310,
+            "driver": "PostgreSQL",
+            "name": "PostgreSQL_Local",
+            "database": "QuizDB",
+            "username": "postgres"
+        }
+    ]
+}
